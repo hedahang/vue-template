@@ -114,21 +114,19 @@ module.exports = {
       errors: true,
     },
     host: "0.0.0.0",
-    port: 9527, // 端口号
+    port: 9528, // 端口号
     https: false, // https:{type:Boolean}
     open: false, //配置自动启动浏览器
     hotOnly: true, // 热更新
     proxy: "http://localhost:3724", // 配置跨域处理,只有一个代理
     // proxy: {
-    //   "/api": {
-    //     // target: "http://192.168.1.151:8080",  //本地
-    //     target: "http://192.168.1.59:10085", //本地
-    //     // target: "http://192.168.1.129:8080", // 测试环境
+    //   "/ys": {
+    //     target: "http://192.168.1.127:19091",
     //     ws: false, // 关闭socket支持，解决与mocker冲突问题
     //     pathRewrite: {
-    //       "/api": ""
-    //     }
-    //   }
-    // }
+    //       // "/ys": "",
+    //     },
+    //   },
+    // },
   },
 };

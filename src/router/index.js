@@ -13,7 +13,7 @@ const constantRoutes = [
   },
   {
     path: "/login",
-    component: resolve => require(["@/views/login"], resolve),
+    component: resolve => require(["@/views/Login"], resolve),
     hidden: true,
   },
   {

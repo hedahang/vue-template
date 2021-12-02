@@ -1,5 +1,5 @@
 {
-  "name": "anti-fraud-platform-web",
+  "name": "vue-template",
   "version": "1.0.0",
   "author": "munachar",
   "private": true,
@@ -9,7 +9,7 @@
     "build:test": "vue-cli-service build --mode productionTest",
     "build:dev": "vue-cli-service build --mode productionDev",
     "lint": "vue-cli-service lint",
-    "mocker": "set PORT=3724 && mocker mocker/index.js"
+    "mocker": "mocker mocker/index.js --host localhost --port 3724"
   },
   "dependencies": {
     "@riophae/vue-treeselect": "^0.4.0",
