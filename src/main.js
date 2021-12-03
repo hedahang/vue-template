@@ -9,6 +9,8 @@ import ElementUI from "element-ui";
 import "@/assets/styles/theme/index.css"; // 自定义elementUI主题颜色
 import "@/assets/styles/index.less"; // 全局样式
 
+import "./permission"; // permission control
+
 // 引入rem
 import "@/assets/js/rem";
 

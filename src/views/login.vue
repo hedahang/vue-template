@@ -140,7 +140,7 @@ export default {
             .then(() => {
               this.loading = false;
               console.log(21213);
-              // window.location.reload();
+              this.$router.push("/");
             })
             .catch(() => {
               this.loading = false;

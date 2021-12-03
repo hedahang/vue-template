@@ -10,10 +10,6 @@ const user = {
     roles: [],
     permissions: [],
     userinfo: {},
-    smsCount: undefined,
-    waitCloseSms: [],
-    unitId: undefined,
-    deptId: undefined,
   },
 
   mutations: {
@@ -45,8 +41,9 @@ const user = {
       return new Promise((resolve, reject) => {
         login(username, password)
           .then(({ data: res }) => {
-            setToken(res.access_token);
-            commit("SET_TOKEN", res.access_token);
+            let { AUTH_TOKEN } = res;
+            setToken(AUTH_TOKEN);
+            commit("SET_TOKEN", AUTH_TOKEN);
             resolve();
           })
           .catch(error => {
@@ -56,7 +53,7 @@ const user = {
     },
 
     // 获取用户信息
-    GetInfo({ commit, state }) {
+    GetInfo({ commit }) {
       return new Promise((resolve, reject) => {
         getInfo()
           .then(res => {
@@ -71,9 +68,6 @@ const user = {
             } else {
               commit("SET_ROLES", ["ROLE_DEFAULT"]);
             }
-            commit("SET_NAME", user.nickName);
-            commit("SET_UNITID", user.unitId);
-            commit("SET_DEPTID", user.deptId);
             commit("SET_AVATAR", avatar);
             commit("SET_USERINFO", user);
             resolve(res);

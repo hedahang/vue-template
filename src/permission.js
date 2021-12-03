@@ -26,7 +26,9 @@ router.beforeEach((to, from, next) => {
             const roles = res.roles;
             store.dispatch("GenerateRoutes", { roles }).then(accessRoutes => {
               // 根据roles权限生成可访问的路由表
-              router.addRoutes(accessRoutes); // 动态添加可访问路由表
+              accessRoutes.forEach(v => {
+                router.addRoute(v); // 动态添加可访问路由表
+              });
               next({ ...to, replace: true }); // hack方法 确保addRoutes已完成
             });
             // 链接socket

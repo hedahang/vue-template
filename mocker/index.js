@@ -1,4 +1,6 @@
 const login = require("./login");
+const menu = require("./menu");
+
 const proxy = {
   // 优先处理。
   // apiMocker(app, path, option)
@@ -38,6 +40,7 @@ const proxy = {
   // 默认的 GET 请求。
   // https://github.com/jaywcjlove/mocker-api/pull/63
   ...login,
+  ...menu,
   "/api/user": {
     id: 1,
     username: "kenny",

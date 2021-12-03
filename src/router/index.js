@@ -5,7 +5,7 @@ import Screen from "../views/screen/index.vue";
 
 Vue.use(VueRouter);
 // 公共路由
-const constantRoutes = [
+export const constantRoutes = [
   {
     path: "/",
     redirect: "/screen/checkpoint",
@@ -45,14 +45,6 @@ const constantRoutes = [
           title: "检查站大屏",
         },
       },
-      {
-        path: "fkq",
-        name: "ScreenFkq",
-        component: () => import("../views/screen/fkq/index.vue"),
-        meta: {
-          title: "防控圈大屏",
-        },
-      },
     ],
   },
   {
@@ -66,6 +58,7 @@ const constantRoutes = [
   },
 ];
 
+// 创建路由实例
 const router = new VueRouter({
   // mode: "history", // 去掉url中的#
   scrollBehavior: () => ({ y: 0 }),
