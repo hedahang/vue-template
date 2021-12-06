@@ -3,8 +3,6 @@
     class="has-logo sidebar-container"
     :style="{
       backgroundColor: variables.menuBg,
-      paddingLeft: !isCollapse ? '10px' : '0',
-      paddingRight: !isCollapse ? '10px' : '0',
     }"
   >
     <logo :collapse="isCollapse" />
@@ -23,7 +21,7 @@
             : 'rgba(0,0,0,.65)'
         "
         :unique-opened="true"
-        :active-text-color="settings.theme"
+        active-text-color="#fff"
         :collapse-transition="false"
         mode="vertical"
         ><sidebar-item
@@ -34,7 +32,6 @@
         />
       </el-menu>
     </el-scrollbar>
-    sidebar
   </div>
 </template>
 <script>

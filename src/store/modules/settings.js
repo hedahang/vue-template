@@ -1,5 +1,9 @@
+import variables from "@/assets/styles/element-variables.scss";
+
+const storageSetting = JSON.parse(localStorage.getItem("layout-setting")) || "";
 const state = {
   title: "检查站管理系统",
+  theme: storageSetting.theme || variables.theme,
   sideTheme: "theme-dark",
 };
 

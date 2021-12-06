@@ -1,5 +1,4 @@
-import router from "@/router";
-import { login, logout, getInfo } from "@/api/login";
+import { login, getInfo } from "@/api/login";
 import { getToken, setToken, removeToken } from "@/utils/auth";
 
 const user = {
@@ -66,7 +65,7 @@ const user = {
           .then(res => {
             const user = res.user;
             const avatar = !user.avatar
-              ? require("@/assets/images/header-portrait.png")
+              ? require("@/assets/images/header/header-portrait.png")
               : user.avatar;
             if (res.roles && res.roles.length > 0) {
               // 验证返回的roles是否是一个非空数组
@@ -86,8 +85,8 @@ const user = {
     },
 
     // 退出系统
-    LogOut({ commit, state }) {
-      return new Promise((resolve, reject) => {
+    LogOut({ commit }) {
+      return new Promise(resolve => {
         // logout(state.token)
         //   .then(() => {
         commit("SET_TOKEN", "");

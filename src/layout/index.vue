@@ -1,5 +1,8 @@
 <template>
   <div :class="classObj" class="app-wrapper">
+    <!-- 头部导航栏 -->
+    <PageHeader></PageHeader>
+    <!-- 菜单栏 -->
     <sidebar
       :style="{
         backgroundColor: variables.menuBg,
@@ -11,10 +14,10 @@
 </template>
 <script>
 import { mapState } from "vuex";
-import { Sidebar } from "./components";
+import { Sidebar, PageHeader } from "./components";
 import variables from "@/assets/styles/variables.less";
 export default {
-  components: { Sidebar },
+  components: { Sidebar, PageHeader },
   computed: {
     ...mapState({
       sidebar: state => state.app.sidebar,

@@ -80,15 +80,13 @@
       }
     }
 
+    & .theme-dark .is-active > .el-submenu__title {
+      color: @subMenuActiveText !important;
+    }
 
     & .nest-menu .el-submenu>.el-submenu__title,
     & .el-submenu .el-menu-item {
       min-width: 180px !important;
-			margin-left: 10px;
-			color: #70A9FF !important;
-			&.is-active{
-				color: #FFFFFF !important;
-			}
       &:hover {
         background-color: rgba(0, 0, 0, 0.06) !important;
       }
@@ -97,8 +95,10 @@
     & .theme-dark .nest-menu .el-submenu>.el-submenu__title,
     & .theme-dark .el-submenu .el-menu-item {
       // background-color: @subMenuBg !important;
-
       &:hover {
+        background-color: @subMenuHover !important;
+      }
+      &.is-active{
         background-color: @subMenuHover !important;
       }
     }

@@ -63,7 +63,7 @@ function filterAsyncRouter(asyncRouterMap, isRewrite = false) {
 
 function filterChildren(childrenMap) {
   var children = [];
-  childrenMap.forEach((el, index) => {
+  childrenMap.forEach(el => {
     if (el.children && el.children.length) {
       if (el.component === "ParentView") {
         el.children.forEach(c => {
