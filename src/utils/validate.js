@@ -36,3 +36,10 @@ export function regex() {
 export function isvalidUsername(str) {
   return str.trim().length > 0;
 }
+/**
+ * @param {string} path
+ * @returns {Boolean}
+ */
+export function isExternal(path) {
+  return /^(https?:|mailto:|tel:)/.test(path);
+}

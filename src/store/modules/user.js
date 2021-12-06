@@ -10,6 +10,7 @@ const user = {
     roles: [],
     permissions: [],
     userinfo: {},
+    status: false,
   },
 
   mutations: {
@@ -31,9 +32,15 @@ const user = {
     SET_USERINFO: (state, userinfo) => {
       state.userinfo = userinfo;
     },
+    SET_STATUS: (state, status) => {
+      state.status = status;
+    },
   },
 
   actions: {
+    updateStatus({ commit }, status) {
+      commit("SET_STATUS", status);
+    },
     // 登录
     Login({ commit }, userInfo) {
       const username = userInfo.manageMobile.trim();
