@@ -113,3 +113,13 @@ export default {
   },
 };
 </script>
+<style lang="less">
+.el-scrollbar {
+  .el-menu-item,
+  .el-submenu__title {
+    font-size: 0.14rem;
+    height: 0.56rem;
+    line-height: 0.56rem;
+  }
+}
+</style>

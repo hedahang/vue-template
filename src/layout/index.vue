@@ -8,8 +8,10 @@
         backgroundColor: variables.menuBg,
       }"
     />
-    <span>layout</span>
-    <router-view />
+    <!-- 主题内容 -->
+    <div class="main-container">
+      <router-view />
+    </div>
   </div>
 </template>
 <script>
@@ -35,3 +37,12 @@ export default {
   },
 };
 </script>
+<style lang="less">
+.app-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background: #000225;
+}
+</style>

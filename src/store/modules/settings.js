@@ -5,6 +5,7 @@ const state = {
   title: "检查站管理系统",
   theme: storageSetting.theme || variables.theme,
   sideTheme: "theme-dark",
+  sidebarLogo: false,
 };
 
 const mutations = {
