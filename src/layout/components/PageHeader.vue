@@ -70,10 +70,11 @@ export default {
 };
 </script>
 <style lang="less">
+@import "~@/assets/styles/variables.less";
 .page-header {
   position: relative;
   width: 100%;
-  height: 0.78rem;
+  height: @headerHeight;
   background-color: #000e5a;
   box-shadow: 0px 0.05rem 0.5rem 0px rgba(0, 0, 0, 0.5);
   .header-lf {

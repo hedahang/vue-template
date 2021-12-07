@@ -10,16 +10,16 @@
     />
     <!-- 主题内容 -->
     <div class="main-container">
-      <router-view />
+      <app-main />
     </div>
   </div>
 </template>
 <script>
 import { mapState } from "vuex";
-import { Sidebar, PageHeader } from "./components";
+import { Sidebar, PageHeader, AppMain } from "./components";
 import variables from "@/assets/styles/variables.less";
 export default {
-  components: { Sidebar, PageHeader },
+  components: { Sidebar, PageHeader, AppMain },
   computed: {
     ...mapState({
       sidebar: state => state.app.sidebar,

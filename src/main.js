@@ -10,6 +10,7 @@ import ElementUI from "element-ui";
 import "@/assets/styles/element-variables.scss";
 
 import "@/assets/styles/index.less"; // 全局样式
+import "@/assets/styles/overwrite.css";
 
 import "./assets/icons"; // icon
 import "./permission"; // permission control
