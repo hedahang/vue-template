@@ -3,7 +3,7 @@
  * @Date: 2021-12-07 13:54:51 
  * @Desc: 覆盖element样式
  * @Last Modified by: munachar
- * @Last Modified time: 2021-12-07 14:00:37
+ * @Last Modified time: 2021-12-08 10:18:11
  */
 
 .el-button + .el-button-popover,
@@ -320,9 +320,6 @@
 }
 .el-date-editor .el-range-separator {
   color: #5697f1;
-}
-.el-date-editor .el-range-input {
-  color: #fff;
 }
 .el-date-table td.in-range div,
 .el-date-table td.in-range div:hover,

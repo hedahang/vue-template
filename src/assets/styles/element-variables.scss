@@ -4,25 +4,63 @@
 **/
 
 /* theme color */
+/* global */
 $--color-primary: #409EFF;
 $--color-success: #13ce66;
 $--color-warning: #ffba00;
 $--color-danger: #ff4949;
-// $--color-info: #1E1E1E;
-
-$--color-white: #1C3685;
+$--color-info: #0964D3;
+$--background-color-base: #FFFFFF;
+$--border-color-base: #5697F1;
+$--color-white: #FFFFFF;
 $--color-text-primary: #FFFFFF;
 $--color-text-regular: #FFFFFF;
 $--color-text-secondary: #FFFFFF;
 $--color-black: #243E8E;
-$--background-color-base: #3955AE;
-
 $--button-font-weight: 400;
-
 $--border-color-light: #dfe4ed;
 $--border-color-lighter: #e6ebf5;
 
-$--table-border:1px solid#dfe6ec;
+$--button-default-background-color: #061D5F;
+$--button-default-border-color: #DCDFE6;
+$--button-default-font-color: #FFFFFF;
+$--radio-font-color: $--color-white;
+$--input-background-color: #1D45B6;
+$--input-icon-color: #FFFFFF;
+$--input-placeholder-color: #5697F1;
+$--input-font-color: $--color-white;
+$--avatar-background-color: #1D45B6;
+$--checkbox-background-color: #18399A;
+$--checkbox-font-color: $--color-white;
+$--collapse-border-color: $--border-color-base;
+$--popover-background-color: #00206F;
+$--popover-border-color: #00206F;
+$--popover-title-font-color: $--color-white;
+$--datepicker-off-font-color: $--color-info;
+$--datepicker-header-font-color: $--color-white;
+$--menu-background-color: #123391;
+$--menu-item-font-color: $--color-primary;
+$--messagebox-title-color: $--color-white;
+$--messagebox-content-color: #32C5FF;
+$--notification-border-color: #18399A;
+$--notification-content-color: #32C5FF;
+$--notification-title-color: $--color-white;
+$--pagination-background-color: #061D5F;
+$--pagination-font-color: $--color-white;
+$--pagination-button-color: #FFFFFF;
+$--pagination-button-disabled-background-color: #061D5F;
+$--radio-input-background-color: #061D5F;
+$--radio-icon-color: #061D5F;
+$--cascader-menu-font-color: #32C5FF;
+$--cascader-menu-selected-font-color: $--color-white;
+$--switch-off-color: #00206F;
+$--table-font-color: $--color-white;
+$--table-header-font-color: $--color-white;
+$--table-header-background-color: #2D63F6;
+$--table-border-color: $--color-primary;
+$--table-row-hover-background-color: #2D63F6;
+
+
 
 /* icon font path; required */
 $--font-path: '~element-ui/lib/theme-chalk/fonts';

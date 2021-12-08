@@ -12,8 +12,13 @@ import "@/assets/styles/element-variables.scss";
 import "@/assets/styles/index.less"; // 全局样式
 import "@/assets/styles/overwrite.css";
 
+import permission from "./directive/permission"; // 自定义指令
+
 import "./assets/icons"; // icon
 import "./permission"; // permission control
+
+// 全局组件挂载
+import "@/components/globalComponents"; // 基础组件自动挂载
 
 // 引入rem
 import "@/assets/js/rem";
@@ -25,6 +30,7 @@ import router from "./router";
 import store from "./store";
 
 // 使用Vue.use()方法就会调用工具方法中的install方法
+Vue.use(permission);
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false;

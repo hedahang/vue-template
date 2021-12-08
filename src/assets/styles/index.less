@@ -165,3 +165,26 @@ ul {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+//app-container全局样式
+.app-container {
+  padding: 20px;
+
+  .header-container {
+    display: flex;
+
+    .lf {
+      flex: 1;
+
+      .el-form--inline .el-form-item {
+        margin-bottom: 0.15rem;
+      }
+    }
+  }
+  .table-container{
+    margin-top: 0.2rem;
+    .el-table{
+      font-size: 0.14rem;
+    }
+  }
+}
